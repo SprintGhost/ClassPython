@@ -2,7 +2,7 @@
 # _*_ coding: utf-8 _*_
 
 def triangles():
-    L1,L2 = [1],[1,1]
+    L1 = [1],[1,1]
     while True:
         yield L1
         L1.append(0)
@@ -18,3 +18,15 @@ for t in triangles():
     n = n + 1
     if n == 10:
         break  
+        
+        
+        
+““”
+def triangles():
+    L = [1]
+    while True:
+        yield L
+        L.append(0);
+        L = [L[i-1] + L[i] for i in range(len(L))]
+        “”“
+#杨辉三角的另一种解法
